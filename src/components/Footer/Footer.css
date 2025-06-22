@@ -1,0 +1,126 @@
+/* Footer Container */
+.footer {
+    background-color: #222; /* Dark background */
+    color: white;
+    padding: 50px 10vw;
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* Footer Content Layout */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Left Section */
+.footer-content-left {
+    flex: 1;
+    max-width: 350px;
+    text-align: left;
+}
+
+.footer-content-left img {
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+.footer-content-left p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Social Media Icons */
+.footer-social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.footer-social-icons img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.footer-content-center {
+    flex: 1;
+    max-width: 250px;
+    text-align: left; /* Align text to the left */
+}
+
+.footer-content-center h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-content-center ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content-center ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.footer-content-center ul li:hover {
+    color: tomato; /* Highlight color */
+}
+
+/* Right Section (Contact Info) */
+.footer-content-right {
+    flex: 1;
+    max-width: 250px;
+    text-align: left;
+}
+
+.footer-content-right h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-content-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content-right ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Footer Divider */
+.footer hr {
+    border: 0;
+    height: 1px;
+    background-color: #444;
+    margin: 30px 0;
+}
+
+/* Copyright Section */
+.footer-copyright {
+    font-size: 16px;
+    text-align: center;
+    color: #bbb;
+}
+@media (max-width: 750px) {
+    .footer-content {
+        display: flex;
+        flex-direction: column;  
+        gap: 35px;
+    }
+    .footer-copyright{
+        text-align: center;
+    }
+}
+

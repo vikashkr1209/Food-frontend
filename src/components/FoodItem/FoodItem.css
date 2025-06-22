@@ -1,0 +1,118 @@
+/* Food Item Container */
+.food-item {
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
+    background: white;
+    overflow: hidden;
+}
+
+/* Hover Effect */
+.food-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Food Image */
+.food-item-image {
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image Hover Zoom Effect */
+.food-item:hover .food-item-image {
+    transform: scale(1.1);
+}
+
+/* Food Info Section */
+.food-item-info {
+    padding: 20px;
+}
+
+/* Name & Rating */
+.food-item-name-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.food-item-name-rating p {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+}
+
+.food-item-name-rating img {
+    width: 100px;
+}
+
+/* Description */
+.food-item-desc {
+    color: #676767;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+/* Price */
+.food-item-price {
+    color: tomato;
+    font-size: 26px;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+
+/* Image Container */
+.food-item-img-container {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Add to Cart Button */
+.food-item-img-container .add {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    width: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect for Add Button */
+.food-item-img-container .add:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 0px 10px rgba(255, 99, 71, 0.6);
+}
+
+/* Counter */
+.food-item-counter {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: white;
+    padding: 6px 10px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Counter Icons */
+.food-item-counter img {
+    width: 22px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Hover Effect for Counter Icons */
+.food-item-counter img:hover {
+    transform: scale(1.2);
+}
+

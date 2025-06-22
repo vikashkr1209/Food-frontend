@@ -1,0 +1,63 @@
+/* Sexy App Download Section */
+.app-download {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b); /* Eye-catching gradient */
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 20px;
+    max-width: 100%;
+    margin: 60px auto;
+    box-shadow: 0 10px 30px rgba(255, 75, 43, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for slight elevation */
+.app-download:hover {
+    transform: scale(1.02);
+}
+
+/* Sexy Download Text */
+.app-download p {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    line-height: 1.5;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    letter-spacing: 0.5px;
+}
+
+/* App Store Buttons */
+.app-download-platform {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Sexy App Store Buttons */
+.app-download-platform img {
+    width: 180px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.4s ease-in-out, box-shadow 0.3s;
+}
+
+/* Sexy Hover Effects */
+.app-download-platform img:hover {
+    transform: scale(1.15) rotate(-2deg);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .app-download {
+        padding: 50px 15px;
+    }
+
+    .app-download p {
+        font-size: 20px;
+    }
+
+    .app-download-platform img {
+        width: 150px;
+    }
+}
